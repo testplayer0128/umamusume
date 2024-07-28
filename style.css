@@ -1,0 +1,132 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+  font-family:"Dancing Script",Serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+:root{
+  --shadow:#00ab2c;
+  --btn1:#f77696;
+  --btn2:#5abae6;
+  --btn3:#ffcd00;
+  --btn4:#6fc346;
+  --kage:1px 1px 1px black;
+}
+
+body{
+  background-image: url(image/豊食祭.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: aliceblue;
+  color: snow;
+  text-shadow: var(--kage);
+}
+header{
+  width: 95%;
+  margin: 10px auto;
+  text-align: center;
+}
+p,a{display: inline-block;}
+.br{padding-left: 20px;}
+a{
+  text-decoration: none;
+}
+.select ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.select li{
+  width: calc((100% - (20% + 10px*8))/3);
+  margin: 5px 10px;
+  text-align: center;
+}
+.select li:nth-child(4n+1){
+  width: 20%;
+  padding: 3px 0;
+}
+.btn{
+  border-radius: 3px;
+  padding: 3px;
+  width: 80%;
+  text-shadow: var(--kage),-1px 1px 1px black,1px -1px 1px black,-1px -1px 1px black,1px 0px 1px black,0px 1px 1px black,-1px 0px 1px black,0px -1px 1px black;
+}
+.btn1{color: var(--btn1);}
+.btn1:hover{background-color: var(--btn1);}
+.btn2{color: var(--btn2);}
+.btn2:hover{background-color: var(--btn2);}
+.btn3{color: var(--btn3);}
+.btn3:hover{background-color: var(--btn3);}
+.btn4{color: var(--btn4);}
+.btn4:hover{background-color: var(--btn4);}
+.btn:hover{color: snow;}
+
+.menu-icon, .ps input[type="checkbox"]{
+  display: none;
+}
+.ps .image1{
+  overflow: hidden;
+  height: 0;
+}
+.switch:checked + .image1{
+  height: auto;
+  width: 50%;
+  position: absolute;
+  right: 0;
+}
+.icon{
+  height: 25px;
+  width: 25px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+
+@media screen and (max-width:768px){
+  header{height: 100px;}
+  .select{
+    height: 170px;
+    background-image: url(image/背景画像.jpg);
+    background-size: 100% 100%;
+  }
+  body{
+    background-image: url(image/背景.jpg);
+    background-position-y: 270px;
+  }
+  header{
+    background-color: #2b63f2;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    text-shadow: 1px 1px 5px var(--shadow),2px 2px 3px var(--shadow),-1px -1px 5px var(--shadow),2px 2px 3px var(--shadow);
+  }
+  .br{
+    display: block;
+  }
+  .select li{
+    font-weight: bold;
+    width: calc((100% - (20% + 5px*8))/3);
+    margin: 5px;
+  }
+  .select li:nth-child(4n+1){
+    width: 20%;
+    padding: 3px 0;
+  }
+  .ps{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .menu-icon{
+    display: block;
+    cursor: pointer;
+  }
+  .menu-icon img{
+    height: 25px;
+    width: 25px;
+  }
+}
