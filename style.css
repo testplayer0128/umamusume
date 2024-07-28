@@ -16,6 +16,7 @@ form, input, div {
   --btn3:#ffcd00;
   --btn4:#6fc346;
   --kage:1px 1px 1px black;
+  --koime:1px 1px 1px black,-1px 1px 1px black,1px -1px 1px black,-1px -1px 1px black,1px 0px 1px black,0px 1px 1px black,-1px 0px 1px black,0px -1px 1px black;
 }
 
 body{
@@ -54,7 +55,7 @@ a{
   border-radius: 3px;
   padding: 3px;
   width: 80%;
-  text-shadow: var(--kage),-1px 1px 1px black,1px -1px 1px black,-1px -1px 1px black,1px 0px 1px black,0px 1px 1px black,-1px 0px 1px black,0px -1px 1px black;
+  text-shadow: var(--koime);
 }
 .btn1{color: var(--btn1);}
 .btn1:hover{background-color: var(--btn1);}
@@ -86,11 +87,23 @@ a{
   right: 15px;
   bottom: 15px;
 }
+.yasai{
+  height: 25px;
+  width: 25px;
+}
+.title{
+  display: flex;
+  flex-wrap: nowrap;
+  text-shadow: var(--koime);
+}
+.debut, .junior{color: var(--btn1);}
+.classica, .classicb, .summerc{color: var(--btn2);}
+.seniora, .seniorb, .summers{color: var(--btn3);}
+.ura{color: var(--btn4);}
 
 @media screen and (max-width:768px){
-  header{height: 100px;}
+  body{font-size: 13.5px;}
   .select{
-    height: 170px;
     background-image: url(image/背景画像.jpg);
     background-size: 100% 100%;
   }
@@ -109,24 +122,23 @@ a{
     display: block;
   }
   .select li{
-    font-weight: bold;
-    width: calc((100% - (20% + 5px*8))/3);
+    width: calc((100% - (calc(100%/6) + 5px*8))/3);
     margin: 5px;
   }
   .select li:nth-child(4n+1){
-    width: 20%;
+    width: calc(100%/6);
     padding: 3px 0;
   }
   .ps{
+    line-height: 1.5;
+    font-size: 14px;
+    text-shadow: none;
+    color: black;
     display: flex;
     flex-wrap: nowrap;
   }
   .menu-icon{
     display: block;
     cursor: pointer;
-  }
-  .menu-icon img{
-    height: 25px;
-    width: 25px;
   }
 }
