@@ -13,105 +13,97 @@
     <body>
         <header>
             <h1>ウマ娘フローチャート<span class="br"></span>～大豊食祭編～</h1>
+            <div class="select">
+                <ul>
+                    <li><a class="btn btn1">1年目</a></li>
+                    <li><a href="#debut" class="btn btn1">デビュー前</a></li>
+                    <li><a href="#junior" class="btn btn1">デビュー後</a></li>
+                    <li><br></li>
+                    <li><a class="btn btn2">2年目</a></li>
+                    <li><a href="#classicb" class="btn btn2">前半</a></li>
+                    <li><a href="#summerc" class="btn btn2">夏休み</a></li>
+                    <li><a href="#classica" class="btn btn2">後半</a></li>
+                    <li><a class="btn btn3">3年目</a></li>
+                    <li><a href="#seniorb" class="btn btn3">前半</a></li>
+                    <li><a href="#summers" class="btn btn3">夏休み</a></li>
+                    <li><a href="#seniora" class="btn btn3">後半</a></li>
+                    <li><a class="btn btn4">URA期</a></li>
+                    <li><a href="#ura" class="btn btn4">ファイナル</a></li>
+                </ul>
+            </div>
         </header>
-        <div class="select">
-            <ul>
-                <li class="btn btn1">1年目</li>
-                <li><a href="#debut" class="btn btn1 debut">デビュー前</a></li>
-                <li><a href="#junior" class="btn btn1 junior">デビュー後</a></li>
-                <li><br></li>
-                <li class="btn btn2">2年目</li>
-                <li><a href="#classicb" class="btn btn2 classicb">前半</a></li>
-                <li><a href="#summerc" class="btn btn2 summerc">夏休み</a></li>
-                <li><a href="#classica" class="btn btn2 classica">後半</a></li>
-                <li class="btn btn3">3年目</li>
-                <li><a href="#seniorb" class="btn btn3 seniorb">前半</a></li>
-                <li><a href="#summers" class="btn btn3 summers">夏休み</a></li>
-                <li><a href="#seniora" class="btn btn3 seniora">後半</a></li>
-                <li class="btn btn4">URA</li>
-                <li><a href="#ura" class="btn btn4 ura">ファイナル</a></li>
-            </ul>
+        <div class="ps">
+            <label for="icon" class="menu-icon">
+                <img class="yasai" src="image/garlic.png">
+                <p>お料理ポイント参考画像</p>
+            </label>
+            <input type="checkbox" id="icon" class="switch">
+            <img class="image image1" src="image/画像1.jpg">
         </div>
         <main>
-            <div class="ps">
-                <label for="icon" class="menu-icon">
-                    <img class="yasai" src="image/garlic.png">
-                </label>
-                <input type="checkbox" id="icon" class="switch">
-                <img class="image image1" src="image/画像1.jpg">
-                <p>お料理ポイント参考画像</p>
-            </div>
             <div class="method">
                 <div id="debut">
                     <div class="title debut">
-                        <label for="icon" class="link-icon">
-                            <img class="yasai" src="image/carrot.png">
-                        </label>
+                        <img class="yasai" src="image/carrot.png">
                         <h3>デビュー前</h3>
+                    </div>
+                    <div class="lesson">
+                        <ol>
+                            <li class="n1">理事長がいるがまだ踏んでいない<br>→理事長を踏む</li>
+                            <li class="n2">サポカが2枚以上または友情練習がある<br>→料理を作る</li>
+                            <li class="n3">絆上げができる練習がある<br>→トレーニングを行う</li>
+                            <li class="n4">友情練習ができるサポカが1枚以上ある<br>→継続目安</li>
+                            <li class="n5">理事長とお出かけできる場合、3人以上の絆上げができる練習がない<br>→お出かけもあり</li>
+                        </ol>
+                        <p>畑レベルを上げるときは野菜が3つ溜まっているとき</p>
                     </div>
                 </div>
                 <div id="junior">
                     <div class="title junior">
-                        <label for="icon" class="link-icon">
-                            <img class="yasai" src="image/carrot.png">
-                        </label>
-                        <h3>ジュニア期</h3>
+                        <img class="yasai" src="image/carrot.png">
+                        <h3>デビュー後(ジュニア期)</h3>
                     </div>
                 </div>
                 <div id="classicb">
                     <div class="title classicb">
-                        <label for="icon" class="link-icon">
-                            <img class="yasai" src="image/potato.png">
-                        </label>
+                        <img class="yasai" src="image/potato.png">
                         <h3>クラシック期前半</h3>
                     </div>
                 </div>
                 <div id="summerc">
                     <div class="title summerc">
-                        <label for="icon" class="link-icon">
-                            <img class="yasai" src="image/potato.png">
-                        </label>
+                        <img class="yasai" src="image/potato.png">
                         <h3>クラシック期夏休み</h3>
                     </div>
                 </div>
                 <div id="classica">
                     <div class="title classica">
-                        <label for="icon" class="link-icon">
-                            <img class="yasai" src="image/potato.png">
-                        </label>
+                        <img class="yasai" src="image/potato.png">
                         <h3>クラシック期後半</h3>
                     </div>
                 </div>
                 <div id="seniorb">
                     <div class="title seniorb">
-                        <label for="icon" class="link-icon">
-                            <img class="yasai" src="image/pepper.png">
-                        </label>
+                        <img class="yasai" src="image/pepper.png">
                         <h3>シニア期前半</h3>
                     </div>
                 </div>
                 <div id="summers">
                     <div class="title summers">
-                        <label for="icon" class="link-icon">
-                            <img class="yasai" src="image/pepper.png">
-                        </label>
+                        <img class="yasai" src="image/pepper.png">
                         <h3>シニア期夏休み</h3>
                     </div>
                 </div>
                 <div id="seniora">
                     <div class="title seniora">
-                        <label for="icon" class="link-icon">
-                            <img class="yasai" src="image/pepper.png">
-                        </label>
+                        <img class="yasai" src="image/pepper.png">
                         <h3>シニア期後半</h3>
                     </div>
                 </div>
                 <div id="ura">
                     <div class="title ura">
-                        <label for="icon" class="link-icon">
-                            <img class="yasai" src="image/strawberry.png">
-                        </label>
-                        <h3>URA期</h3>
+                        <img class="yasai" src="image/strawberry.png">
+                        <h3>URA(ファイナル)</h3>
                     </div>
                 </div>
             </div>
