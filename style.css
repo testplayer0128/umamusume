@@ -120,34 +120,43 @@ ul{list-style: none;}
   flex-wrap: nowrap;
   text-shadow: var(--koime);
 }
-.debut, .junior{color: var(--btn1);}
-.classica, .classicb, .summerc{color: var(--btn2);}
-.seniora, .seniorb, .summers{color: var(--btn3);}
+.junior-season{color: var(--btn1);}
+.classic-season{color: var(--btn2);}
+.senior-season{color: var(--btn3);}
 .ura{color: var(--btn4);}
 
 .lesson ol{
-  margin-left: 20px;
+  margin-left: 15px;
 }
-.lesson li{
+.lesson li, .summer{
   color: snow;
   text-shadow: var(--koime);
 }
 .lesson p{
-  color: red;
-  font-weight: bold;
   text-shadow: var(--koime);
-  margin-left: auto;
+}
+.lesson .mini{
+  font-size: 12px;
+  text-shadow: none;
+  color: darkblue;
+}
+.attention{
+  color: black;
+}
+.mark{
+  height: 13.5px;
+  width: 13.5px;
 }
 @media screen and (max-width:768px){
   body{
     font-size: 13.5px;
     background-image: none;
-  }
+  }/*
   main{
     background-image: url(image/背景.jpg);
     background-size: 100%;
-    background-repeat: no-repeat;
-  }
+    background-repeat: repeat;
+  }*/
   header{
     width: 100%;
     margin: 0;
@@ -176,7 +185,12 @@ ul{list-style: none;}
     height: 30px;
     width: 30px;
   }
-  #debut:hover{
-    background-color: var(--c1);
-  }
+  .junior-season{background-color: var(--c1);}
+  .classic-season{background-color: var(--c2);}
+  .senior-season{background-color: var(--c3);}
+  #ura{background-color: var(--c4);}
+  .b{display: none;}
+}
+@media screen and (max-width:480px) {
+  .b{display: block;}
 }
