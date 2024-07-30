@@ -11,13 +11,17 @@ form, input, div {
 :root{
   --shadow:#00ab2c;
   --btn1:#f77696;
-  --c1:rgba(247, 118, 150,0.5);
+  --b1:#e7396f;
+  --c1:rgba(247, 118, 150,0.3);
   --btn2:#5abae6;
-  --c2:rgba(90, 186, 230,0.5);
+  --b2:#2459b4;
+  --c2:rgba(90, 186, 230,0.3);
   --btn3:#ffcd00;
-  --c3:rgba(255, 205, 0,0.5);
+  --b3:#dab610;
+  --c3:rgba(255, 205, 0,0.3);
   --btn4:#6fc346;
-  --c4:rgba(111, 195, 70,0.5);
+  --b4:#21713a;
+  --c4:rgba(111, 195, 70,0.3);
   --kage:1px 1px 1px black;
   --koime:1px 1px 1px black,-1px 1px 1px black,1px -1px 1px black,-1px -1px 1px black,1px 0px 1px black,0px 1px 1px black,-1px 0px 1px black,0px -1px 1px black;
 }
@@ -31,8 +35,6 @@ body{
   color: snow;
 }
 header{
-  width: 95%;
-  margin: 10px auto;
   text-align: center;
   text-shadow: 1px 1px 5px var(--shadow),2px 2px 3px var(--shadow),-1px -1px 5px var(--shadow),2px 2px 3px var(--shadow);
 }
@@ -112,37 +114,32 @@ ul{list-style: none;}
   height: 20px;
   width: 20px;
 }
-.title{
+.title, .picture{
   display: flex;
-  flex-wrap: nowrap;
-  text-shadow: var(--koime);
+  flex-wrap: nowrap;/*
+  text-shadow: var(--kage);*/
 }
-.junior-season{color: var(--btn1);}
-.classic-season{color: var(--btn2);}
-.senior-season{color: var(--btn3);}
-#ura{color: var(--btn4);}
+.junior-season{color: var(--b1);}
+.classic-season{color: var(--b2);}
+.senior-season{color: var(--b3);}
+#ura{color: var(--b4);}
 
 .lesson ol{margin-left: 30px;}
-.lesson li, .summer, .lesson .mini{
-  color: darkblue;
+.senior-season{text-shadow: var(--kage);}
+.lesson .mini{font-size: 12px;}
+.attention, .summer, .lesson li{
+  color: black;
   text-shadow: none;
 }
-.summer{color: snow;}
-.lesson p{
-  text-shadow: var(--koime);
-}
-.lesson .mini{font-size: 12px;}
-.attention{color: black;}
 .mark{
   height: 13.5px;
   width: 13.5px;
 }
-.picture{
-  display: flex;
-  flex-wrap: nowrap;
-}
 .photo{width: 50%;}
 footer{height: 50px;}
+.ok{color: red;}
+.ng, .blue{color: blue;}
+.green{color: #28a959;}
 @media screen and (max-width:768px){
   body{
     font-size: 13.5px;
@@ -180,7 +177,6 @@ footer{height: 50px;}
     height: 30px;
     width: 30px;
   }
-  .season{padding-bottom: 3.5px;}
   .junior-season{background-color: var(--c1);}
   .classic-season{background-color: var(--c2);}
   .senior-season{background-color: var(--c3);}
@@ -189,6 +185,7 @@ footer{height: 50px;}
 }
 .image3{width: 100%;}
 @media screen and (max-width:480px) {
+  .lesson{margin-left: 5px;}
   .b,.space{display: inline-block;}
-  .lesson ol{margin-left: 15px;}
+  .lesson ol, .info{margin-left: 15px;}
 }
