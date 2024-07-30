@@ -90,7 +90,7 @@ ul{list-style: none;}
   overflow: hidden;
   height: 0;
 }
-.switch:checked + .image1, .checkbox:checked + .image2{height: auto;}
+.switch:checked + .image1, .checkbox:checked + .image2, .support:checked + .image6{height: auto;}
 
 .icon{
   height: 50px;
@@ -122,21 +122,16 @@ ul{list-style: none;}
 .senior-season{color: var(--btn3);}
 #ura{color: var(--btn4);}
 
-.lesson ol{
-  margin-left: 15px;
+.lesson ol{margin-left: 30px;}
+.lesson li, .summer, .lesson .mini{
+  color: darkblue;
+  text-shadow: none;
 }
-.lesson li, .summer{
-  color: snow;
-  text-shadow: var(--koime);
-}
+.summer{color: snow;}
 .lesson p{
   text-shadow: var(--koime);
 }
-.lesson .mini{
-  font-size: 12px;
-  text-shadow: none;
-  color: darkblue;
-}
+.lesson .mini{font-size: 12px;}
 .attention{color: black;}
 .mark{
   height: 13.5px;
@@ -195,4 +190,5 @@ footer{height: 50px;}
 .image3{width: 100%;}
 @media screen and (max-width:480px) {
   .b,.space{display: inline-block;}
+  .lesson ol{margin-left: 15px;}
 }
