@@ -33,24 +33,24 @@
             </div>
         </header>
         <div class="ps">
-            <label for="icon1" class="menu-icon">
+            <label for="icon1">
                 &emsp;<img class="yasai" src="image/garlic.png">
                 <p>料理ポイント参考画像</p>
             </label>
             <input type="checkbox" id="icon1" class="switch">
-            <img class="image image1" src="image/画像1.jpg">
-            <label for="icon2" class="menu-icon">
+            <img class="image" src="image/画像1.jpg">
+            <label for="icon2">
                 &emsp;<img class="yasai" src="image/garlic.png">
                 <p>用語集</p>
             </label>
-            <input type="checkbox" id="icon2" class="checkbox">
-            <img class="image image2" src="image/画像2.jpg"><br>
-            <label for="icon3" class="menu-icon">
+            <input type="checkbox" id="icon2" class="switch">
+            <img class="image" src="image/画像2.jpg"><br>
+            <label for="icon3">
                 &emsp;<img class="yasai" src="image/garlic.png">
                 <p>おすすめサポカ</p>
             </label>
-            <input type="checkbox" id="icon3" class="support">
-            <img src="image/サポカ.png" class="image image6">
+            <input type="checkbox" id="icon3" class="switch">
+            <img src="image/サポカ.png" class="image">
         </div>
         <main>
             <div class="method">
@@ -62,17 +62,43 @@
                         </div>
                         <div class="lesson">
                             <ol>
-                                <li>理事長がいるがまだ踏んでいない&nbsp;→&nbsp;理事長と練習</li>
-                                <li>サポカが2人以上または友情トレがある&nbsp;→&nbsp;料理を作る</li>
-                                <li>絆上げができる練習がある&nbsp;→&nbsp;優先的に練習</li>
-                                <li>理事長とお出かけでき、3人以上の絆上げができない&nbsp;
-                                    <br class="b">→&nbsp;お出かけも可</li>
+                                <li>
+                                    <label for="debut1">理事長がいるがまだ踏んでいない</label>
+                                    <input type="checkbox" id="debut1" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;理事長と練習</span>
+                                </li>
+                                <li>
+                                    <label for="debut2">サポカが2人以上または友情トレがある</label>
+                                    <input type="checkbox" id="debut2" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;料理を作る</span>
+                                </li>
+                                <li>
+                                    <label for="debut3">絆上げができる練習がある</label>
+                                    <input type="checkbox" id="debut3" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;優先的に練習</span>
+                                </li>
+                                <li>
+                                    <label for="debut4">理事長とお出かけでき、3人以上の絆上げができない<br class="b"></label>
+                                    <input type="checkbox" id="debut4" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;お出かけも可</span>
+                                </li>
                             </ol>
                             <div class="summer">
-                                <p>・友情トレができるサポカが1人以上or緑絆が3人以上&nbsp;
-                                    <br class="b"><span class="space">&emsp;</span>→&nbsp;
-                                    <span class="ok">継続目安</span></p>
-                                <p>・3人以下&nbsp;→&nbsp;<span class="ng">諦めてもいいかも</span></p>
+                                <p>
+                                    <label for="next1">・友情トレができるサポカが1人以上or緑絆が3人以上<br class="b">
+                                        <input type="checkbox" id="next1" class="training">
+                                        <span class="ad"><span class="b">&emsp;</span>
+                                            &nbsp;→&nbsp;<span class="ok">継続目安</span>
+                                        </span>
+                                    </label>
+                                </p><br class="space">
+                                <p>
+                                    <label for="next2">・3人以下</label>
+                                    <input type="checkbox" id="next2" class="training">
+                                    <span class="ad">
+                                        &nbsp;→&nbsp;<span class="ng">諦めてもいいかも</span>
+                                    </span>
+                                </p>
                             </div>
                             <div class="info"><h4>畑レベルを上げるときは野菜が3つ溜まっているとき</h4></div>
                         </div>
@@ -84,17 +110,38 @@
                         </div>
                         <div class="lesson">
                             <ol>
-                                <li>友情トレがある&nbsp;→&nbsp;最優先で練習</li>
-                                <li>絆上げができる練習がある&nbsp;→&nbsp;優先的に練習</li>
-                                <li>お料理ポイントが2,000Pt or 2,500Ptたまった&nbsp;
-                                    <br class="b">→&nbsp;以降は食材確保</li>
-                                <li>体力90以下で練習も弱い&nbsp;→&nbsp;理事長とお出かけ</li>
+                                <li>
+                                    <label for="junior1">友情トレがある</label>
+                                    <input type="checkbox" id="junior1" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;最優先で練習</span>
+                                </li>
+                                <li>
+                                    <label for="junior2">絆上げができる練習がある</label>
+                                    <input type="checkbox" id="junior2" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;優先的に練習</span>
+                                </li>
+                                <li>
+                                    <label for="junior3">お料理ポイントが2,000Pt or 2,500Ptたまった<br class="b"></label>
+                                    <input type="checkbox" id="junior3" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;以降は食材確保</span>
+                                </li>
+                                <li>
+                                    <label for="junior4">体力90以下で練習も弱い</label>
+                                    <input type="checkbox" id="junior4" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;理事長とお出かけ</span>
+                                </li>
                             </ol>
                             <div class="summer">
-                                <p>・全員と友情トレができるor緑絆1人&nbsp;→&nbsp;
-                                    <span class="ok">継続目安</span></p>
-                                <p>・青絆1人以上or緑絆2人以上&nbsp;→&nbsp;
-                                    <span class="ng">諦めたほうがいいかも</span></p>
+                                <p>
+                                    <label for="next3">・全員と友情トレができるor緑絆1人</label>
+                                    <input type="checkbox" id="next3" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;<span class="ok">継続目安</span></span>
+                                </p>
+                                <p>
+                                    <label for="next4">・青絆1人以上or緑絆2人以上</label>
+                                    <input type="checkbox" id="next4" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;<span class="ng">諦めたほうがいいかも</span></span>
+                                </p>
                             </div>
                             <div class="info"><h4>畑レベルはにんにく以外Lv.2で終わる</h4></div>
                         </div>
@@ -108,14 +155,46 @@
                         </div>
                         <div class="lesson">
                             <ol>
-                                <li>友情トレがある&nbsp;→&nbsp;最優先で練習</li>
-                                <li>体力70以上でレースが緑野菜&nbsp;→&nbsp;レースへ</li>
-                                <li>体力70以下で理事長のお出かけが1~3回&nbsp;→&nbsp;お出かけへ</li>
-                                <li>体力70以下でお休みが緑野菜&nbsp;→&nbsp;お休みへ</li>
-                                <li>体力70以下で理事長のお出かけが4回目&nbsp;→&nbsp;お出かけへ</li>
-                                <li><span class="green">賢さ</span>にサポカ2人以上で失敗率5%以下&nbsp;→&nbsp;<span class="green">賢さ</span>へ</li>
-                                <li>体力70以上&nbsp;→&nbsp;レースorサポカ2人以上の練習へ</li>
-                                <li>上記以外&nbsp;→&nbsp;お休みへ</li>
+                                <li>
+                                    <label for="cb1">友情トレがある</label>
+                                    <input type="checkbox" id="cb1" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;最優先で練習</span>
+                                </li>
+                                <li>
+                                    <label for="cb2">体力70以上でレースが緑野菜</label>
+                                    <input type="checkbox" id="cb2" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;レースへ</span>
+                                </li>
+                                <li>
+                                    <label for="cb3">体力70以下で理事長のお出かけが1~3回</label>
+                                    <input type="checkbox" id="cb3" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;お出かけへ</span>
+                                </li>
+                                <li>
+                                    <label for="cb4">体力70以下でお休みが緑野菜</label>
+                                    <input type="checkbox" id="cb4" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;お休みへ</span>
+                                </li>
+                                <li>
+                                    <label for="cb5">体力70以下で理事長のお出かけが4回目</label>
+                                    <input type="checkbox" id="cb5" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;お出かけへ</span>
+                                </li>
+                                <li>
+                                    <label for="cb6"><span class="green">賢さ</span>にサポカ2人以上で失敗率5%以下</label>
+                                    <input type="checkbox" id="cb6" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;<span class="green">賢さ</span>へ</span>
+                                </li>
+                                <li>
+                                    <label for="cb7">体力70以上</label>
+                                    <input type="checkbox" id="cb7" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;レースorサポカ2人以上の練習へ</span>
+                                </li>
+                                <li>
+                                    <label for="cb8">上記以外</label>
+                                    <input type="checkbox" id="cb8" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;お休みへ</span>
+                                </li>
                             </ol>
                             <div class="info">
                                 <h4>にんにくを5月前半にLv.2、以外をLv.3にする&nbsp;
@@ -129,7 +208,7 @@
                                     &nbsp;<img class="mark" src="image/ok.jpg">にんにく以外の在庫があふれる場合は友情1人でも<br>
                                 <h4>・料理を作らないタイミング</h4>
                                     &nbsp;<img class="mark" src="image/ng.jpg">友情トレなし<br>
-                                    &nbsp;<img class="mark" src="image/ng.jpg">にんじんが230個未満の<span class="blue">スピード料理</span>
+                                    &nbsp;<img class="mark" src="image/ng.jpg">にんじんが<span class="orange">230個</span>未満の<span class="blue">スピード料理</span>
                             </div>
                         </div>
                     </div>
@@ -139,10 +218,18 @@
                             <h3>クラシック期夏合宿</h3>
                         </div>
                         <div class="lesson">
-                            <p class="summer">&emsp;<span class="green">賢さ</span>と他練習の強さ(メンバーの数)が同じ場合&nbsp;
-                                <br class="b"><span class="space">&emsp;</span>→&nbsp;<span class="green">賢さ</span>へ<br>
-                            <span class="mini">※体力90以上or友情トレ発生中の野菜の在庫があふれる場合は
-                                <br class="b">&emsp;<span class="green">賢さ</span>以外でも可</span></p>
+                            <p class="summer">
+                                <label for="natu">
+                                    &emsp;<span class="green">賢さ</span>と他練習の強さ(メンバーの数)が同じ場合<br class="b">
+                                </label>
+                                <input type="checkbox" id="natu" class="training">
+                                <span class="ad"><span class="b">&emsp;</span>
+                                    &nbsp;→&nbsp;<span class="green">賢さ</span>へ<br>
+                                    <span class="mini">&emsp;※体力90以上or友情トレ発生中の野菜の在庫があふれる場合は
+                                        <br class="b">&emsp;<span class="green">賢さ</span>以外でも可
+                                    </span>
+                                </span>
+                            </p>
                             <div class="attention">
                                 <h4>・料理を作るタイミング</h4>
                                     &nbsp;<img class="mark" src="image/ok.jpg">友情トレ2人以上or友情1人+サポカ1人以上<br>
@@ -150,7 +237,7 @@
                                     &nbsp;<img class="mark" src="image/ok.jpg">にんにく以外の在庫があふれる場合は友情1人でも<br>
                                 <h4>・料理を作らないタイミング</h4>
                                     &nbsp;<img class="mark" src="image/ng.jpg">友情トレなし<br>
-                                    &nbsp;<img class="mark" src="image/ng.jpg">にんじんが180個未満の<span class="blue">スピード料理</span>
+                                    &nbsp;<img class="mark" src="image/ng.jpg">にんじんが<span class="orange">180個</span>未満の<span class="blue">スピード料理</span>
                             </div>
                             <div class="info"><h4>料理ポイントは6,000Pt以上を目標に、最低でも5,500Pt</h4></div>
                         </div>
@@ -169,7 +256,7 @@
                                     &nbsp;<img class="mark" src="image/ok.jpg">にんにく以外の在庫があふれる場合は友情1人でも<br>
                                 <h4>・料理を作らないタイミング</h4>
                                     &nbsp;<img class="mark" src="image/ng.jpg">友情トレなし<br>
-                                    &nbsp;<img class="mark" src="image/ng.jpg">にんじんが230個未満の<span class="blue">スピード料理</span>
+                                    &nbsp;<img class="mark" src="image/ng.jpg">にんじんが<span class="orange">230個</span>未満の<span class="blue">スピード料理</span>
                             </div>
                             <div class="info"><h4>料理ポイントは8,000ptでシニアへ</h4></div>
                         </div>
@@ -189,7 +276,7 @@
                                     &nbsp;<img class="mark" src="image/ok.jpg">にんにく以外の在庫があふれる場合は友情1人でも<br>
                                 <h4>・料理を作らないタイミング</h4>
                                     &nbsp;<img class="mark" src="image/ng.jpg">友情トレなし<br>
-                                    &nbsp;<img class="mark" src="image/ng.jpg">にんじんが230個未満の<span class="blue">スピード料理</span>※800料理限定
+                                    &nbsp;<img class="mark" src="image/ng.jpg">にんじんが<span class="orange">230個</span>未満の<span class="blue">スピード料理</span>※800料理限定
                             </div>
                             <div class="info">
                                 <h4>6月前半までにLv.4を3つ、試食会時にLv.4を4つにする
@@ -203,17 +290,49 @@
                             <h3>シニア期夏合宿</h3>
                         </div>
                         <div class="lesson">
-                            <p class="summer">&emsp;<span class="green">賢さ</span>と他練習の強さ(メンバーの数)が同じ場合&nbsp;
-                                <br class="b"><span class="space">&emsp;</span>→&nbsp;<span class="green">賢さ</span>へ<br>
-                                <span class="mini">&emsp;※体力90以上or友情トレ発生中の野菜の在庫があふれる場合は
-                                    <br class="b">&emsp;<span class="green">賢さ</span>以外でも可</span></p>
+                            <p class="summer">
+                                <label for="summer">
+                                    &emsp;<span class="green">賢さ</span>と他練習の強さ(メンバーの数)が同じ場合<br class="b">
+                                </label>
+                                <input type="checkbox" id="summer" class="training">
+                                <span class="ad"><span class="b">&emsp;</span>
+                                    &nbsp;→&nbsp;<span class="green">賢さ</span>へ<br>
+                                    <span class="mini">&emsp;※体力90以上or友情トレ発生中の野菜の在庫があふれる場合は
+                                        <br class="b">&emsp;<span class="green">賢さ</span>以外でも可
+                                    </span>
+                                </span>
+                            </p>
                             <ol>
-                                <li>友情トレがある&nbsp;→&nbsp;最優先で練習</li>
-                                <li>体力70以上でレースが緑野菜&nbsp;→&nbsp;レースへ</li>
-                                <li>体力50以上で<span class="green">賢さ</span>にサポカが2人以上&nbsp;→&nbsp;<span class="green">賢さ</span>へ</li>
-                                <li>体力80以上でサポカ2人以上&nbsp;<br class="b">→&nbsp;1番ステータスが伸びる練習へ</li>
-                                <li>体力90以上&nbsp;→&nbsp;レースへ</li>
-                                <li>上記以外&nbsp;→&nbsp;お休みへ</li>
+                                <li>
+                                    <label for="senior1">友情トレがある</label>
+                                    <input type="checkbox" id="senior1" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;最優先で練習</span>
+                                </li>
+                                <li>
+                                    <label for="senior2">体力70以上でレースが緑野菜</label>
+                                    <input type="checkbox" id="senior2" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;レースへ</span>
+                                </li>
+                                <li>
+                                    <label for="senior3">体力50以上で<span class="green">賢さ</span>にサポカが2人以上</label>
+                                    <input type="checkbox" id="senior3" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;<span class="green">賢さ</span>へ</span>
+                                </li>
+                                <li>
+                                    <label for="senior4">体力80以上でサポカ2人以上<br class="b"></label>
+                                    <input type="checkbox" id="senior4" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;1番ステータスが伸びる練習へ</span>
+                                </li>
+                                <li>
+                                    <label for="senior5">体力90以上</label>
+                                    <input type="checkbox" id="senior5" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;レースへ</span>
+                                </li>
+                                <li>
+                                    <label for="senior6">上記以外</label>
+                                    <input type="checkbox" id="senior6" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;お休みへ</span>
+                                </li>
                             </ol>
                             <div class="attention">
                                 <h4>・800料理を作るタイミング</h4>
@@ -222,7 +341,7 @@
                                     &nbsp;<img class="mark" src="image/ok.jpg">にんにく以外の在庫があふれる場合は友情1人でも<br>
                                 <h4>・800料理を作らないタイミング</h4>
                                     &nbsp;<img class="mark" src="image/ng.jpg">友情トレなし<br>
-                                    &nbsp;<img class="mark" src="image/ng.jpg">にんじんが270個未満の<span class="blue">スピード料理</span>
+                                    &nbsp;<img class="mark" src="image/ng.jpg">にんじんが<span class="orange">270個</span>未満の<span class="blue">スピード料理</span>
                             </div>
                             <div class="info">
                                 <p class="summer">12,000Ptを超えると250料理や500料理も選択肢に入れる<br>
@@ -238,13 +357,41 @@
                         </div>
                         <div class="lesson">
                             <ol>
-                                <li>友情トレがある&nbsp;→&nbsp;最優先で練習</li>
-                                <li>体力80以上でレースが緑野菜&nbsp;→&nbsp;レースへ</li>
-                                <li>理事長のお出かけが5回未満&nbsp;→&nbsp;お出かけへ</li>
-                                <li><span class="green">賢さ</span>にサポカ2人以上で失敗率5%以下&nbsp;→&nbsp;<span class="green">賢さ</span>へ</li>
-                                <li>体力80以下でお休みが緑野菜&nbsp;→&nbsp;お休みへ</li>
-                                <li>体力70以上&nbsp;→&nbsp;レースorサポカ2人以上の練習へ</li>
-                                <li>上記以外&nbsp;→&nbsp;お休みへ</li>
+                                <li>
+                                    <label for="seniora1">友情トレがある</label>
+                                    <input type="checkbox" id="seniora1" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;最優先で練習</span>
+                                </li>
+                                <li>
+                                    <label for="seniora2">体力80以上でレースが緑野菜</label>
+                                    <input type="checkbox" id="seniora2" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;レースへ</span>
+                                </li>
+                                <li>
+                                    <label for="seniora3">理事長のお出かけが5回未満</label>
+                                    <input type="checkbox" id="seniora3" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;お出かけへ</span>
+                                </li>
+                                <li>
+                                    <label for="seniora4"><span class="green">賢さ</span>にサポカ2人以上で失敗率5%以下</label>
+                                    <input type="checkbox" id="seniora4" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;<span class="green">賢さ</span>へ</span>
+                                </li>
+                                <li>
+                                    <label for="seniora5">体力80以下でお休みが緑野菜</label>
+                                    <input type="checkbox" id="seniora5" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;お休みへ</span>
+                                </li>
+                                <li>
+                                    <label for="seniora6">体力70以上</label>
+                                    <input type="checkbox" id="seniora6" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;レースorサポカ2人以上の練習へ</span>
+                                </li>
+                                <li>
+                                    <label for="seniora7">上記以外</label>
+                                    <input type="checkbox" id="seniora7" class="training">
+                                    <span class="ad">&nbsp;→&nbsp;お休みへ</span>
+                                </li>
                             </ol>
                             <div class="info"><h4>畑レベルはサポカに合わせて上げる</h4></div>
                         </div>
@@ -262,7 +409,7 @@
                                     &nbsp;<img class="mark" src="image/ok.jpg">にんにく以外の在庫があふれる場合は友情1人でも<br>
                                 <h4>・800料理を作らないタイミング</h4>
                                     &nbsp;<img class="mark" src="image/ng.jpg">友情トレなし<br>
-                                    &nbsp;<img class="mark" src="image/ng.jpg">にんじんが270個未満の<span class="blue">スピード料理</span><br>
+                                    &nbsp;<img class="mark" src="image/ng.jpg">にんじんが<span class="orange">270個</span>未満の<span class="blue">スピード料理</span><br>
                                     &nbsp;<img class="mark" src="image/ng.jpg">体力90以上で友情1人+サポカ1人かつ練習の野菜が
                                     <br class="b">&emsp;300個以下<span class="mini">&emsp;※250料理や500料理の作成は可</span>
                             </div>

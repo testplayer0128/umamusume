@@ -87,12 +87,16 @@ ul{list-style: none;}
   padding: 3px;
 }*/
 
-.menu-icon, .ps input[type="checkbox"]{display: none;}
+/*チェックボックス内容*/
+input[type="checkbox"], .lesson .ad, .ad5
+{display: none;}
 .ps .image{
   overflow: hidden;
   height: 0;
 }
-.switch:checked + .image1, .checkbox:checked + .image2, .support:checked + .image6{height: auto;}
+.switch:checked + .image{height: auto;}
+.training:checked + .ad{display: inline-block;}
+.debut4:not(:checked) + .ad5{display: none;}
 
 .icon{
   height: 50px;
@@ -140,6 +144,8 @@ footer{height: 50px;}
 .ok{color: red;}
 .ng, .blue{color: blue;}
 .green{color: #28a959;}
+.orange{color: #cf4436;font-weight: bold;}
+#ura h4{font-weight: bold;}
 @media screen and (max-width:768px){
   body{
     font-size: 13.5px;
@@ -177,15 +183,16 @@ footer{height: 50px;}
     height: 30px;
     width: 30px;
   }
+  .lesson, .summer{margin-left: 5px;}
+  .lesson ol, .info{margin-left: 15px;}
   .junior-season{background-color: var(--c1);}
   .classic-season{background-color: var(--c2);}
   .senior-season{background-color: var(--c3);}
   #ura{background-color: var(--c4);}
-  .b,.space{display: none;}
+  .b{display: none;}.space{display: block;}
 }
 .image3{width: 100%;}
 @media screen and (max-width:480px) {
-  .lesson{margin-left: 5px;}
-  .b,.space{display: inline-block;}
-  .lesson ol, .info{margin-left: 15px;}
+  .b{display: inline-block;}.space{display: none;}
+  .summer{margin-left: 0;}
 }
